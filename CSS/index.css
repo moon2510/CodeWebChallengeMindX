@@ -1,0 +1,30 @@
+body {
+   background-image: url("/Image/bgr.jpg");
+   background-repeat: repeat-x;
+}
+
+.vietnam {
+   background-image: url("/Image/cos.png");
+   background-size: 120px;
+   background-repeat: repeat;
+   margin-top: 35%;
+}
+
+.forms {
+   display: flex;
+   justify-content: center;
+}
+
+#list-messages {
+   width: 500px;
+   background-color: rgba(245, 245, 245, 0.548);
+   padding: 15px;
+   border-radius: 5px;
+   font-weight: 100;
+   font-size: 18px;
+   margin: auto;
+   text-align: justify;
+}
+ul{
+   list-style-type:none;
+}

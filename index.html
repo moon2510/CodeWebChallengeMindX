@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/CSS/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link href="//db.onlinewebfonts.com/c/cefd416d4a810c38e8e2987afa6ef07f?family=Grendel's+Mother" rel="stylesheet"
+      type="text/css" />
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <title>Lời nhắn nhủ </title>
+
+</head>
+<script>
+   $(document).ready(function () {
+         $("#submit").click(function (e) {
+            e.preventDefault();
+            var username = $("#name-input").val();
+            var message = $("#message-input").val();
+            $("#list-messages").append(
+               '<li>' + username + ': ' + message + '</li>'
+            );
+         });
+      });
+</script>
+<body>
+   <div class="op">
+      
+   </div>
+   
+   <div class="forms">
+      <form>
+         <div class="form-group sm">
+            <label for="exampleInputEmail1">Họ và tên</label>
+            <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp"
+               placeholder="Nhập họ và tên">
+         </div>
+         <div class="form-group">
+            <label for="exampleInputPassword1">Bạn muốn nhắn nhủ điều gì </label>
+            <input type="text" class="form-control" id="message-input" placeholder="Lời nhắn nhủ">
+         </div>
+         <button id="submit" class="btn btn-primary">Submit</button>
+      </form>
+   </div>
+   <div class="vietnam">
+      <p id="list-messages">Cảm ơn các chiến sĩ đang ngày đêm canh gác nơi biên cương, cảm ơn các y bác sĩ tuyến đầu chống dịch, cảm ơn những người
+      hi sinh thầm lặng, nỗ lực chia sẻ và đóng góp hết mình để kiểm soát dịch bệnh.</p>
+      
+      <ul id="list-messages"></ul>
+   
+   </div>
+   
+   
+</body>
+
+</html>
